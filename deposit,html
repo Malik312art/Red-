@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deposit - Red Dot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade-in">
+  <div class="container">
+    <h2>Deposit</h2>
+    <form>
+      <input type="text" placeholder="Transaction ID" required />
+      <select required>
+        <option value="">Select Method</option>
+        <option value="jazzcash">JazzCash</option>
+        <option value="easypaisa">EasyPaisa</option>
+      </select>
+      <button type="submit">Submit Deposit</button>
+    </form>
+  </div>
+</body>
+</html>
