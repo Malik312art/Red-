@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Red Dot - Home</title>
+  <title>Red Dot</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="homepage">
-  <div class="red-circle-container">
-    <div class="red-circle">
-      <h1>Red Dot</h1>
-    </div>
+<body>
+  <div class="loader">
+    <div class="circle-spin"></div>
+    <h1 class="logo-text">Red Dot</h1>
   </div>
 
-  <script>
-    setTimeout(() => {
-      window.location.href = "login.html";
-    }, 4000); // 4 seconds delay
-  </script>
+  <div class="main-content fade-in">
+    <nav>
+      <ul>
+        <li><a href="wallet.html">Wallet</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="deposit.html">Deposit</a></li>
+        <li><a href="withdraw.html">Withdraw</a></li>
+      </ul>
+    </nav>
+  </div>
 </body>
 </html>
