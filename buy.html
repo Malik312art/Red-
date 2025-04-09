@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Package - Red Dot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade-in">
+  <div class="container">
+    <h2>Buy Package</h2>
+    <p>You selected package of: Rs. <span id="amount"></span></p>
+    <button onclick="location.href='deposit.html'">Proceed to Deposit</button>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const amount = urlParams.get('amount');
+    document.getElementById("amount").innerText = amount;
+  </script>
+</body>
+</html>
